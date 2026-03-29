@@ -1,62 +1,133 @@
-# Fit-track-pro: Comprehensive Fitness Tracking Web Application
+# FitTrack Pro — AI Fitness & Diet Planner
 
-## 🌟 Project Overview
-
-**Fit-track-pro** is a full-featured web application designed to help users track, manage, and optimize their fitness journey. The platform allows users to log workouts, monitor progress, set personal goals, and gain actionable insights, all through a clean and intuitive interface.  
-
-This project is ideal for fitness enthusiasts, developers, and contributors interested in building practical applications that combine **data analytics, web development, and user experience design**. It also serves as an educational resource for beginners who want to learn how to build full-stack web applications with Python and Flask.
+A fitness planning system that generates personalized diet and workout plans based on user metrics, with authentication and persistent tracking using MongoDB.
 
 ---
 
-## 🔑 Key Features
+## 🚀 What This Actually Solves
 
-- **User Authentication**: Secure login and registration system with encrypted passwords.  
-- **Workout Tracking**: Log workouts including type, duration, intensity, calories burned, and notes.  
-- **Goal Setting**: Define personal fitness goals and track progress over time.  
-- **Progress Visualization**: Interactive charts and dashboards display trends and insights.  
-- **Responsive Design**: Optimized for desktop and mobile devices using Bootstrap.  
-- **Data Export**: Export progress reports in CSV or PDF formats.  
-- **Extensible Architecture**: Easy to add new features like AI recommendations or social sharing.
+Fitness planning is:
+- Generic (same plans for everyone)  
+- Hard to track consistently  
+- Not personalized  
 
----
-
-## 🛠 Technologies Used
-
-- **Python** – Backend logic and application control.  
-- **Flask** – Web framework for routing, templates, and server-side logic.  
-- **SQLite** – Lightweight database for storing user and workout data.  
-- **HTML, CSS, JavaScript** – Frontend structure and interactivity.  
-- **Bootstrap** – Responsive UI components.  
-- **Matplotlib & Plotly** – Data visualization and analytics dashboards.
+This system provides:
+- BMI-based personalization  
+- AI-generated diet and workout plans  
+- Persistent tracking of user progress  
 
 ---
 
-## 📂 Project Structure
-Fit-track-pro/
-│
-├── app.py                  # Main Flask application
-├── templates/              # HTML templates for frontend pages
-│   ├── index.html
-│   ├── dashboard.html
-│   └── login.html
-├── static/                 # CSS, JS, images
-├── models.py               # Database models
-├── forms.py                # Form handling with WTForms
-├── requirements.txt        # Python dependencies
-├── README.md               # Project documentation
-├── LICENSE                 # MIT License
-└── CONTRIBUTING.md         # Contribution guidelines
+## ⚙️ Core Features
+
+### User Management
+- Login / Register system  
+- User-specific data storage  
+
+### Health Analysis
+- BMI calculation with category classification  
+- Input: age, height, weight  
+
+### AI Recommendations
+- Diet plan generation  
+- Workout plan generation with duration  
+
+### Tracking System
+- Save meals  
+- Log workouts  
+- View history  
+
+### Data Persistence
+- MongoDB storage for user data  
 
 ---
 
-## 🚀 Installation & Setup
+## 🏗️ System Flow
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/DavieObi/Fit-track-pro.git
-   cd Fit-track-pro
+User Input → BMI Calculation → AI API → Plan Generation → MongoDB Storage → UI Display
 
-pip install -r requirements.txt
+---
 
-python app.py
+## 📁 Project Structure
 
+FitTrack-Pro/  
+├── app.py              # Streamlit app  
+├── requirements.txt  
+├── README.md  
+├── .env                # API keys  
+└── database/ (MongoDB)
+
+---
+
+## 🛠️ Tech Stack
+
+Frontend / UI:
+- Streamlit  
+
+Backend Logic:
+- Python  
+
+Database:
+- MongoDB  
+
+AI Integration:
+- Google Gemini API  
+
+---
+
+## 🚀 Setup
+
+git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git  
+cd YOUR_REPO  
+
+pip install -r requirements.txt  
+
+# Add API key  
+Create .env:
+GOOGLE_API_KEY=your_api_key  
+
+# Start MongoDB  
+mongod  
+
+# Run app  
+streamlit run app.py  
+
+---
+
+## 🧪 How to Use
+
+1. Register / Login  
+2. Enter health details  
+3. Generate plans  
+4. Save meals / workouts  
+5. Track history  
+
+
+## 💡 Future Improvements
+
+- Add JWT authentication  
+- Deploy with MongoDB Atlas  
+- Add calorie tracking and goals  
+- Improve UI and interaction  
+- Add custom backend (Flask/Node)  
+
+---
+
+## 📌 Why This Project Matters
+
+This project demonstrates:
+- Integration of AI APIs into applications  
+- User-specific data management  
+- CRUD operations with MongoDB  
+- Building interactive ML-powered apps  
+
+---
+
+## 👤 Author
+
+Gonuguntala Jaikar Ramu  
+https://github.com/viperxjaikar  
+
+---
+
+## ⭐ Star if useful
